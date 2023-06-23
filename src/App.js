@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import "./App.scss"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import { NavbarComponent } from './component';
+
+import Home from './pages/Home';
+import Sukses from './pages/Sukses';
+
+
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <NavbarComponent/>
+        <main>
+          <Routes>
+            <Route path="/" Component={Home} exact/>
+            <Route path="/sukses" Component={Sukses} exact/>
+          </Routes>
+        </main>
+      </BrowserRouter>
+    )
+  }
 }
 
-export default App;
+
+
+
+

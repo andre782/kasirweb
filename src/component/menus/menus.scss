@@ -1,0 +1,14 @@
+.card {
+    width: 14rem;
+    margin-bottom: 8px;
+  
+    @media (max-width: 1074px) {
+      width: calc(50% - 8px);
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

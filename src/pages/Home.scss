@@ -1,0 +1,20 @@
+
+
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    flex: 0 0 18rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overflow-auto::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+  height: 820px;
+}
